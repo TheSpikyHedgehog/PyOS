@@ -11,7 +11,7 @@
      </p>
 
 
->Note: There isn't a compiled version of this project.  If someone were to compile this project, please create an issue and tell me about it 🙂.
+
 # Features:
 - A working notepad-like-software (PyNotes) that you can save to your real computer's hard drive.
 - A working code editor that can make and edit files to your real computer's hard drive.
