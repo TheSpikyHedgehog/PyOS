@@ -27,7 +27,7 @@
 > *Tip: You can use software like VirtualBox or VMware to load in a windows virtual machine and run the program on there.*
 
 
-Download the code and unzip it using software like 7-Zip and winRAR.
+Download the code and unzip it using software like 7-Zip or winRAR.
 Most modules that this project uses are included in Python's standard utility modules so you shouldn't have to install a lot but just to be sure, please take a look at this list.
 
 - pygame (mixer) 
