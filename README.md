@@ -24,9 +24,8 @@
 # Installation:
 ## From Source Code:
 
-> **WARNING:** some programs in this project do *NOT* work with Linux or MacOS.  While this may be changed in the future, please take note that PyCode and PyNotes do not work on Linux. This is because they both make a directory under "C:\\" (Linux's filesystem is different from Windows).  Despite everything, it is not very important. You may remove/edit the parts requiring the directory to fit your machine's needs.
+> **WARNING:** This program has been updated to work with OS like Linux or OS X.  This does NOT mean there is NO bugs.  Please report them. Thanks 😃
 >
-> *Tip: You can use software like VirtualBox or VMware to load in a windows virtual machine and run the program on there.*
 
 
 Download the code and unzip it using software like 7-Zip or winRAR.
