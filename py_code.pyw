@@ -10,7 +10,7 @@ from tkinter.scrolledtext import ScrolledText
 
 ctypes.windll.shcore.SetProcessDpiAwareness(True)
 try:
-    os.mkdir("C:/PyCode")
+    os.mkdir("./PyCode")
 except FileExistsError:
     print("User already has required directory")
 # Setup Tkinter
@@ -43,14 +43,14 @@ def new_file():
     global current_file
     responce = messagebox.askyesnocancel(title="Save?", message="Do you want to save your file?")
     if responce == True:
-        with open(f'C:/PyCode/{current_file}', 'w', encoding='utf-8') as f:
+        with open(f'./PyCode/{current_file}', 'w', encoding='utf-8') as f:
             f.write(editArea.get('1.0', END))
             try:
                 f.write(editArea.delete('1.0', END))
             except TypeError:
                 print("Perpose error")
     elif False:
-        with open(f'C:/PyCode/{current_file}', 'w', encoding='utf-8') as f:
+        with open(f'./PyCode/{current_file}', 'w', encoding='utf-8') as f:
             try:
                 f.write(editArea.delete('1.0', END))
             except TypeError:
@@ -60,7 +60,7 @@ def new_file():
     
     current_file = simpledialog.askstring("Input", "Name your new file (don't forget to include file format like .py)")
     
-    with open(f'C:/PyCode/{current_file}', 'w', encoding='utf-8') as f:
+    with open(f'./PyCode/{current_file}', 'w', encoding='utf-8') as f:
         f.write('')
     root.title(f"{current_file} - PyCode | Python editor")
 
@@ -111,11 +111,11 @@ def save_file(event=None):
 def execute(event=None):
 
     
-    with open(f'C:/PyCode/{current_file}', 'w', encoding='utf-8') as f:
+    with open(f'./PyCode/{current_file}', 'w', encoding='utf-8') as f:
         f.write(editArea.get('1.0', END))
 
    
-    os.system(f'start cmd /K "python C:/PyCode/{current_file}"')
+    os.system(f'start cmd /K "python ./PyCode/{current_file}"')
 
 # people make changes; add things
 def changes(event=None):
@@ -226,7 +226,7 @@ helpMenu.add_command(label="About PyCode", command = about)
 
 editArea.insert('1.0', """print("WELCOME TO PyCode!")
 #delete this text
-print("All files (including this default file) will be located at C:/PyCode/ !")
+print("All files (including this default file) will be located at .(currect dir)/PyCode/ !")
 #You may delete this file as you wish. Note that this file will be recreated everytime you run this.
 #Another note: Somefiles may not be readable. This is currently unfixable.
                 """)
