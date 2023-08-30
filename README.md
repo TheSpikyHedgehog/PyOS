@@ -12,6 +12,8 @@
 
 
 >Note: The file extensions are .pyw because they are used to make console-less windows.  The files are still editable and if you can't, you can just turn them into regular Python files (.py).  Just don't forget to turn them back in Python Windowed (.pyw) after you are done!
+>
+>If you encounter any issues, please please create an issue and I will try to fix it.  Without your feedback, I can't improve!
 # Features:
 - A working notepad-like-software (PyNotes) that you can save to your real computer's hard drive.
 - A working code editor that can make and edit files to your real computer's hard drive.
