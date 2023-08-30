@@ -32,7 +32,7 @@ Download the code and unzip it using software like 7-Zip or winRAR.
 Most modules that this project uses are included in Python's standard utility modules so you shouldn't have to install a lot but just to be sure, please take a look at this list.
 
 - pygame (mixer) 
-- os (file I/O; ex. `os.mkdir("C:/PyCode")`)
+- os (file I/O)
 - tkinter (GUI work)
 - datetime (Current date)
 - turtle (Graphics for the sierpinski triangle)
