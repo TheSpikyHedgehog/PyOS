@@ -79,19 +79,19 @@ class Desktop:
         self.popup_menu.insert(itemType="separator", index=0)
         
         self.popup_menu.add_command(label = "Calulator",
-                                    command = lambda: os.system("start PyOS/calulator.pyw"))
+                                    command = lambda: os.system("start  calulator.pyw"))
         self.popup_menu.add_separator()
         self.popup_menu.add_command(label = "PyMusic",
-                                    command = lambda: os.system("start PyOS/py_music.pyw"))
+                                    command = lambda: os.system("start  py_music.pyw"))
         self.popup_menu.add_separator()
         self.popup_menu.add_command(label = "PyCode",
-                                    command = lambda: os.system("start PyOS/py_code.pyw"))
+                                    command = lambda: os.system("start  py_code.pyw"))
         self.popup_menu.add_separator()
         self.popup_menu.add_command(label = "PyNotes",
-                                    command = lambda: os.system("start PyOS/PyNotes/PyNotes.pyw"))
+                                    command = lambda: os.system("start  PyNotes/PyNotes.pyw"))
         self.popup_menu.add_separator()
         self.popup_menu.add_command(label = "Sierpinski Triangle",
-                                    command = lambda: os.system("start PyOS/sierpinski_triangle.pyw"))
+                                    command = lambda: os.system("start  sierpinski_triangle.pyw"))
         self.popup_menu.add_separator()
         self.popup_menu.add_command(label = "Yellow Window",
                                     command = lambda: new_win(color="Yellow"))
@@ -124,9 +124,9 @@ class Desktop:
 
         start_btn = Button(self.root, text= "⭘",font=("Tahoma", 15), command= lambda: self.popup_menu.tk_popup(x=80,y=640))
         start_btn.place(x=10, y=751)
-        pynotes_btn = Button(self.root, text= "PyNotes", font=("Tahoma", 15), command= lambda: os.system("start PyOS/PyNotes/PyNotes.pyw"))
+        pynotes_btn = Button(self.root, text= "PyNotes", font=("Tahoma", 15), command= lambda: os.system("start PyNotes.pyw"))
         pynotes_btn.place(x=70, y=751)
-        pycode = Button(self.root, text= "PyCode", font=("Tahoma", 15), command= lambda: os.system("start PyOS/py_code.pyw"))
+        pycode = Button(self.root, text= "PyCode", font=("Tahoma", 15), command= lambda: os.system("start  py_code.pyw"))
         pycode.place(x=180, y=751)
 
 start = Desktop()
